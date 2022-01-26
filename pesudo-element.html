@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psesudo</title>
+    <style>
+        h1::before{
+            content: 'Hello';
+            color: rgb(5, 221, 31);
+        }
+        h1::after{
+            content:'Hi';
+            color: rgb(5, 221, 31);
+        }
+        blockquote::before{
+            content: open-quote;
+            color: rgb(241, 2, 194);
+            font-size: 1.5rem;
+        }
+        blockquote::after{
+            content: close-quote;
+            color: rgb(241, 2, 194);
+            font-size: 1.5rem;
+        }
+        .section-title{
+            display: inline-block;
+        }
+        .section-title::after, .section-title:hover::before{
+            content: '';
+            display: block;
+            background-color: firebrick;
+            height: 2px;
+            width: 100px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Amar Sonar Bangla Ami Tomai Valobasi</h1>
+    <h1>Coro Din Tomar Akash, Tomar Vatas</h1>
+    <section>
+        <h2 class="section-title">Best Qoutes</h2>
+        <blockquote>
+            I got 27 people living in my head and all of them was about to beat the heck out of you for doing that
+        </blockquote>
+        <blockquote>
+            For me, there is a guiding compass that just lives inside of me. Every time I've gone against it, something bad has happened. As long as I stay in line and honor it, it has really been life-changing.
+        </blockquote>
+        <blockquote>
+            Everything that I write about, I write from my own experiences. There are bits and pieces of everything that's in the very fabric of who I am, that help me tell a story.
+        </blockquote>
+    </section>
+</body>
+</html>
